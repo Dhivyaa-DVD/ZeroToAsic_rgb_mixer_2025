@@ -1,0 +1,243 @@
+$date
+	Wed May 20 23:13:29 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module rgb_mixer $end
+$var wire 1 ! clk $end
+$var wire 1 " enc0_a $end
+$var wire 1 # enc0_b $end
+$var wire 1 $ enc1_a $end
+$var wire 1 % enc1_b $end
+$var wire 1 & enc2_a $end
+$var wire 1 ' enc2_b $end
+$var wire 1 ( reset_n $end
+$var wire 1 ) reset $end
+$var wire 1 * pwm2_out $end
+$var wire 1 + pwm1_out $end
+$var wire 1 , pwm0_out $end
+$var wire 1 - enc2_b_db $end
+$var wire 1 . enc2_a_db $end
+$var wire 8 / enc2 [7:0] $end
+$var wire 1 0 enc1_b_db $end
+$var wire 1 1 enc1_a_db $end
+$var wire 8 2 enc1 [7:0] $end
+$var wire 1 3 enc0_b_db $end
+$var wire 1 4 enc0_a_db $end
+$var wire 8 5 enc0 [7:0] $end
+$scope module debounce0_a $end
+$var wire 1 " button $end
+$var wire 1 ! clk $end
+$var wire 1 ) reset $end
+$var reg 8 6 button_history [7:0] $end
+$var reg 1 4 debounced $end
+$upscope $end
+$scope module debounce0_b $end
+$var wire 1 # button $end
+$var wire 1 ! clk $end
+$var wire 1 ) reset $end
+$var reg 8 7 button_history [7:0] $end
+$var reg 1 3 debounced $end
+$upscope $end
+$scope module debounce1_a $end
+$var wire 1 $ button $end
+$var wire 1 ! clk $end
+$var wire 1 ) reset $end
+$var reg 8 8 button_history [7:0] $end
+$var reg 1 1 debounced $end
+$upscope $end
+$scope module debounce1_b $end
+$var wire 1 % button $end
+$var wire 1 ! clk $end
+$var wire 1 ) reset $end
+$var reg 8 9 button_history [7:0] $end
+$var reg 1 0 debounced $end
+$upscope $end
+$scope module debounce2_a $end
+$var wire 1 & button $end
+$var wire 1 ! clk $end
+$var wire 1 ) reset $end
+$var reg 8 : button_history [7:0] $end
+$var reg 1 . debounced $end
+$upscope $end
+$scope module debounce2_b $end
+$var wire 1 ' button $end
+$var wire 1 ! clk $end
+$var wire 1 ) reset $end
+$var reg 8 ; button_history [7:0] $end
+$var reg 1 - debounced $end
+$upscope $end
+$scope module encoder0 $end
+$var wire 1 4 a $end
+$var wire 1 3 b $end
+$var wire 1 ! clk $end
+$var wire 1 < reset $end
+$var reg 1 = olda $end
+$var reg 1 > oldb $end
+$var reg 8 ? value [7:0] $end
+$upscope $end
+$scope module encoder1 $end
+$var wire 1 1 a $end
+$var wire 1 0 b $end
+$var wire 1 ! clk $end
+$var wire 1 @ reset $end
+$var reg 1 A olda $end
+$var reg 1 B oldb $end
+$var reg 8 C value [7:0] $end
+$upscope $end
+$scope module encoder2 $end
+$var wire 1 . a $end
+$var wire 1 - b $end
+$var wire 1 ! clk $end
+$var wire 1 D reset $end
+$var reg 1 E olda $end
+$var reg 1 F oldb $end
+$var reg 8 G value [7:0] $end
+$upscope $end
+$scope module pwm0 $end
+$var wire 1 ! clk $end
+$var wire 8 H level [7:0] $end
+$var wire 1 ) reset $end
+$var wire 1 I led_on $end
+$var reg 8 J counter [7:0] $end
+$var reg 1 , out $end
+$upscope $end
+$scope module pwm1 $end
+$var wire 1 ! clk $end
+$var wire 8 K level [7:0] $end
+$var wire 1 ) reset $end
+$var wire 1 L led_on $end
+$var reg 8 M counter [7:0] $end
+$var reg 1 + out $end
+$upscope $end
+$scope module pwm2 $end
+$var wire 1 ! clk $end
+$var wire 8 N level [7:0] $end
+$var wire 1 ) reset $end
+$var wire 1 O led_on $end
+$var reg 8 P counter [7:0] $end
+$var reg 1 * out $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 P
+xO
+bx N
+b0 M
+xL
+bx K
+b0 J
+xI
+bx H
+bx G
+xF
+xE
+zD
+bx C
+xB
+xA
+z@
+bx ?
+x>
+x=
+z<
+b0 ;
+b0 :
+b0 9
+b0 8
+b0 7
+b0 6
+bx 5
+04
+03
+bx 2
+01
+00
+bx /
+0.
+0-
+0,
+0+
+0*
+1)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+1!
+$end
+#5000
+0!
+#10000
+0F
+0E
+0B
+0A
+0>
+0=
+1!
+#15000
+0!
+#20000
+1!
+#25000
+0!
+#30000
+1!
+#35000
+0!
+#40000
+0)
+1(
+1!
+#45000
+0!
+#50000
+x*
+b1 P
+x+
+b1 M
+x,
+b1 J
+1!
+#55000
+0!
+#60000
+b10 J
+b10 M
+b10 P
+1!
+#65000
+0!
+#70000
+b11 P
+b11 M
+b11 J
+1!
+#75000
+0!
+#80000
+b100 J
+b100 M
+b100 P
+1!
+#85000
+0!
+#90000
+b101 P
+b101 M
+b101 J
+1!
+#90001
